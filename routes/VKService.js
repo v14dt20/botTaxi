@@ -7,11 +7,11 @@ class VKService {
 
     async sendMessage(message, peerId, randomId) {
         const params = new URLSearchParams({
-        peer_id: peerId,
-        random_id: randomId,
-        message: message,
-        v: '5.199',
-        access_token: process.env.VK_TOKEN,
+            peer_id: peerId,
+            random_id: randomId,
+            message: message,
+            v: '5.199',
+            access_token: process.env.VK_TOKEN,
         });
 
         const response = await fetch(`${this.VK_API_URL}?${params}`);

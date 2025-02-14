@@ -35,9 +35,9 @@ nothing) Иное. Напиши что ты не предназначен для
         });
 
         return new Promise((resolve) => {
-        eventEmitterManager.once('response', (data) => {
-            resolve(data);
-        });
+            eventEmitterManager.once('response', (data) => {
+                resolve(data);
+            });
         });
     }
 }
